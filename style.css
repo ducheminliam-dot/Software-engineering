@@ -12,22 +12,7 @@ body {
     line-height: 1.6;
 }
 
-footer {
-    background-color: #8b0000;
-    color: white;
-    text-align: center;
-    padding: 3rem 1rem;
-    margin-top: 4rem;
-}
-
-footer h3 {
-    font-family: "Italianno", cursive;
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-
-/* Navigation */
+/* NAVIGATION */
 
 nav {
     position: sticky;
@@ -51,7 +36,7 @@ nav a:hover {
     color: #f8d568;
 }
 
-/* Hero Banner */
+/* HERO BANNER */
 
 .hero {
     height: 450px;
@@ -67,12 +52,16 @@ nav a:hover {
     background-image: url(photos/Software\ Engineering/Contact.jpg);
  }
 
- .hero-home {
+ .hero-about {
     background-image: url(photos/Software\ Engineering/Home.jpg);
- }
+}
+
+.hero-gallery {
+    background-image: url(photos/Software\ Engineering/Gallery.jpg);
+}
 
 
-/* Main Content */
+/* MAIN CONTENT */
 
 main {
     max-width: 1100px;
@@ -102,7 +91,7 @@ h3 {
     font-size: 1.6rem;
 }
 
-/* Menu */
+/* MENU */
 
 .menu-category {
     margin-bottom: 3rem;
@@ -150,31 +139,20 @@ h3 {
     border-radius: 10px;
 }
 
-/* Mobile */
+/* FOOTER */
 
-@media (max-width: 768px) {
+footer {
+    background-color: #8b0000;
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+    margin-top: 4rem;
+}
 
-    nav {
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
-
-    .hero {
-        height: 250px;
-    }
-
-    h1 {
-        font-size: 2.2rem;
-    }
-
-    .menu-item {
-        flex-direction: column;
-    }
-
-    .menu-item img {
-        width: 100%;
-        height: 220px;
-    }
+footer h3 {
+    font-family: "Italianno", cursive;
+    font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
 .footer-container {
@@ -241,9 +219,7 @@ h3 {
     padding-left: 5px;
 }
 
-.hero-about {
-    background-image: url(photos/Software\ Engineering/Home.jpg);
-}
+/* ABOUT US*/
 
 .about-section {
     margin-bottom: 3rem;
@@ -288,7 +264,6 @@ h3 {
     border-radius: 10px;
 }
 
-
 .services-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -313,9 +288,94 @@ h3 {
     margin-bottom: 0.5rem;
 }
 
+/* RESERVATION */
+
+.reservation-intro {
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+    text-align: center;
+}
+
+.reservation-intro p {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.reservation-section {
+    max-width: 800px;
+    margin: auto;
+}
+
+.reservation-form {
+display: flex;
+flex-direction: column;
+gap: 1rem;
+background-color: white;
+padding: 2rem;
+border-radius: 10px;
+box-shadow: 0 2px 8px rgba(0,0,0,.1);
+}
+
+.reservation-form label {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.4rem;
+    color: #8b0000;
+    font-weight: 500;
+}
+
+.reservation-form input,
+.reservation-form select,
+.reservation-form textarea {
+    padding: .8rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.reservation-form button {
+    background-color: #8b0000;
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.4rem;
+}
+
+.reservation-form button:hover {
+    background-color: #6d0000;
+}
+
+/* MOBILE */
 
 @media (max-width: 768px) {
-    .about-card,
+
+    nav {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .hero {
+        height: 250px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .menu-item {
+        flex-direction: column;
+    }
+
+    .menu-item img {
+        width: 100%;
+        height: 220px;
+    }
+
+      .about-card,
     .about-card.reverse {
         flex-direction: column;
     }

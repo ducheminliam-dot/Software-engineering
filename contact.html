@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title> Reservations & Contact</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,10 +13,10 @@
     <header>
 
         <nav>
-            <a href="index.html" class="btn">Home</a>
+            <a href="index.html" class="btn">About Us</a>
             <a href="menu.html" class="btn">Menu</a>
-            <a href="aboutus.html" class="btn">About Us</a>
-            <a href="contact.html" class="btn">Contact</a>
+            <a href="gallery.html" class="btn">Gallery</a>
+            <a href="contact.html" class="btn"> Reservations & Contact</a>
         </nav>
 
         <div class=" hero hero-contact"></div>
@@ -25,15 +25,95 @@
 
     <main>
 
-        <h1>Contact</h1>
+        <h1>Table reservations & Contact</h1>
+
+        <h2>Table Reservation and Contact Form</h2>
+
+        <section class="reservation-intro">
+            <p>
+                Reserve your table at La Piazza and enjoy authentic Italian dining experience at La Piazza.
+                For special requests or additional information, please contact us through our contact form.
+            </p>
+        </section>
+
+        <section class="reservation-section">
+
+            <form class="reservation-form">
+
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Firstname Lastname" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="firstname.lastname@domain.com">
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="+358404123456">
+
+                <label for="date">Reservation Date</label>
+                <input type="date" id="date" required>
+
+                <label for="time">Reservation Time</label>
+                <input type="time" id="time" required>
+
+                <label for="guests">Number of Guests</label>
+                <select id="guests" required>
+                    <option value="">Select</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6+</option>
+                </select>
+
+                <label for="message">Special Requests</label>
+                <textarea id="message" rows="5"></textarea>
+
+                <button type="submit">
+                    Reserve Table
+                </button>
+
+            </form>
+
+        </section>
+
+        CONTACT FORM HERE
 
     </main>
 
     <footer>
+        <div class="footer-container">
 
-        <h3>La Piazza</h3>
-        <p>© 2026 La Piazza. All rights reserved.</p>
+            <div class="footer-section">
+                <h3>La Piazza</h3>
+                <p>
+                    Talonpojankatu 2<br>
+                    67100 Kokkola<br>
+                    Tel : <a href="tel:+358123456789">+358123456789</a>
+                </p>
+            </div>
 
+            <div class="footer-section">
+                <h4>Opening hours</h4>
+                <ul>
+                    <li>Monday - Friday : 11:00 - 22:00</li>
+                    <li>Saturday : 11:00 - 23:00</li>
+                    <li>Sunday : Closed</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Follow us</h4>
+                <div class="social-links">
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer">TikTok</a>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="copyright">© 2026 La Piazza. All rights reserved.</p>
     </footer>
 
 </body>
